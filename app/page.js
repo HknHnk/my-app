@@ -9,9 +9,13 @@ import Timer2 from "@/Components/gcsetimer";
 export default function Home() {
   return (
     <>
-      <Header/>
-      <NoteList/>
-      <Footer/>
-   </>
+      <Header />
+      <NoteList />
+      <div className='flex justify-center items-center gap-4 mt-8'>
+        <Timer />
+        <Timer2 />
+      </div>
+      <Footer />
+    </>
   )
 }
