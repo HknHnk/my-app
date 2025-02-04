@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { assets } from '@/Assets/assets.js';
 import Timer from './timer';
+import Timer2 from './gcsetimer';
 
 const Header = () => {
     return (
@@ -9,7 +10,14 @@ const Header = () => {
             <div className='flex justify-between items-center'>
                 <Image src={assets.icon} width={180} alt='icon' className='w-[130px] sm:w-auto' />
                 <button className='flex items-center gap-2 font-medium py1 px-3 sm:py-3 sm:px-6 border border-solid border-black'>
-                    Get started <Image src={assets.arrow} alt='arrow' />
+                    Menu 
+                    <Image 
+                        src={assets.menu} 
+                        alt='menu' 
+                        width={30} 
+                        height={30} 
+                        className='w-[30px] h-[30px]' // Tailwind CSS classes to limit size
+                    />
                 </button>
             </div>
             <div className='text-center my-8'>
@@ -22,7 +30,9 @@ const Header = () => {
                     <button type='submit' className='border-1 border-black py-4 px-4 sm:px-8 active:bg-gray-600 active:text-white'>Subscribe</button>
                 </form>
             </div>
-            <Timer />
+            <div className='flex justify-center items-center gap-4 mt-8'>
+
+            </div>
         </div>
     );
 }

@@ -1,15 +1,15 @@
 import { useState, useEffect } from "react";
 import Head from "next/head";
-import styles from "./Timer.module.css";
+import styles from "./Timer2.module.css";
 
-const Timer = () => {
+const Timer2 = () => {
     const [days, setDays] = useState(0);
     const [hours, setHours] = useState(0);
     const [minutes, setMinutes] = useState(0);
     const [seconds, setSeconds] = useState(0);
 
     useEffect(() => {
-        const targetDate = new Date("2025-05-06T09:00").getTime();
+        const targetDate = new Date("2025-06-20T17:00").getTime();
 
         const interval = setInterval(() => {
             const now = new Date().getTime();
@@ -32,10 +32,10 @@ const Timer = () => {
     return (
         <div className={styles.container}>
             <Head>
-                <title>Time until 1st AS subject - You got this!</title>
+                <title>GCSE countdown</title>
             </Head>
             <div className={styles.timer}>
-                <h1 className={styles.title}>Time until 1st AS subject - You got this!</h1>
+                <h1 className={styles.title}>Days till Summer Holidays!</h1>
                 <div className={styles.time}>
                     <div className={styles.timeSegment}>
                         <span className={styles.number}>{days}</span>
@@ -59,4 +59,4 @@ const Timer = () => {
     );
 };
 
-export default Timer;
+export default Timer2;

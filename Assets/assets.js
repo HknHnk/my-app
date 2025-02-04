@@ -6,6 +6,7 @@ import ig from './ig_icon.jpeg'
 import teams from './teams_icon.png'
 import add_icon from './add_icon.png'
 import upload from './Upload.png'
+import menu from './menu.png'
 
 export const assets = {
     icon,
@@ -15,6 +16,7 @@ export const assets = {
     teams,
     add_icon,
     upload,
+    menu
       
     }
     

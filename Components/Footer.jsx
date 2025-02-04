@@ -2,6 +2,8 @@ import React from 'react'
 import {assets} from '@/Assets/assets.js'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
+import Timer from './timer'
+import Timer2 from './gcsetimer'
 
 const Footer = () => {
     return (
@@ -12,7 +14,11 @@ const Footer = () => {
                     <Image src={assets.ig} alt=''width={100}/>
                     <Image src={assets.teams} alt=''width={100}/>
                 </div>
+                <Timer/>
+                <Timer2/>
         </div>
+                       
+
     )
 }
 
